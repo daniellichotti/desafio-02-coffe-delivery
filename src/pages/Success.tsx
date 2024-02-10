@@ -1,3 +1,11 @@
+import { Header } from '../components/Header'
+import { MainSuccess } from '../components/MainSuccess'
+
 export function Success() {
-  return <h1>Success</h1>
+  return (
+    <>
+      <Header />
+      <MainSuccess />
+    </>
+  )
 }
