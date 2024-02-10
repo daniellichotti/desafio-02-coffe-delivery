@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Trash } from '@phosphor-icons/react'
 
 export const ButtonContainer = styled.button`
   height: 32px;
@@ -13,4 +14,8 @@ export const ButtonContainer = styled.button`
     background: ${(props) => props.theme['base-hover']};
     color: ${(props) => props.theme['base-subtitle']};
   }
+`
+
+export const StyledTrashPin = styled(Trash)`
+  color: ${(props) => props.theme.purple};
 `
