@@ -1,9 +1,15 @@
 import { ButtonCartContainer, StyledShoppingCart } from './styled'
 
-export function ButtonCart() {
+interface ButtonProps {
+  text: string
+  buttonColor: string
+  iconColor: string
+}
+
+export function ButtonCart(props: ButtonProps) {
   return (
-    <ButtonCartContainer>
-      <StyledShoppingCart weight="fill" />
+    <ButtonCartContainer style={{ backgroundColor: props.buttonColor }}>
+      <StyledShoppingCart style={{ color: props.iconColor }} weight="fill" />
     </ButtonCartContainer>
   )
 }
