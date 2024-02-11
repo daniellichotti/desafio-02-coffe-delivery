@@ -22,9 +22,67 @@ export const MainSuccessBoxInfo = styled.div`
   height: 270px;
 
   margin-top: 40px;
-  border: 1px solid ${(props) => props.theme['purple-dark']};
+  padding: 40px;
 
-  border-radius: 6px 36px 6px 36px;
+  border: 1px solid transparent; /*Define a largura e o estilo da borda */
+
+  border-image: linear-gradient(
+    to right,
+    ${(props) => props.theme['yellow-dark']},
+    ${(props) => props.theme['purple-dark']}
+  ); /* Define o gradiente da borda */
+  border-image-slice: 1;
+  border-radius: 6px 36px 6px 36px !important;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  justify-content: space-between;
+`
+
+export const DeliverMessageSuccess = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
+  }
+`
+
+export const DeliveryTimeSuccess = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
+  }
+`
+export const DeliveryPaymentSuccess = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
+  }
 `
 
 export const MainSuccessImage = styled.image`

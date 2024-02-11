@@ -6,11 +6,11 @@ import {
   ShopCartIcon,
   TextContainerMessage,
   TextDetailsMessage,
-  TimerIcon,
   TitleSubtitleMessage,
 } from './styled'
 import cupCoffeeMain from '../../assets/cupCoffeeMain.svg'
-import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
+import { Coffee, Package, ShoppingCart } from '@phosphor-icons/react'
+import { TimerIcon } from '../TimerIcon'
 
 export function Main() {
   return (
@@ -41,9 +41,7 @@ export function Main() {
             </div>
             <div>
               <div>
-                <TimerIcon>
-                  <Timer weight="fill" />
-                </TimerIcon>
+                <TimerIcon />
                 <p>Entrega rápida e rastreada</p>
                 <CoffeeIcon>
                   <Coffee weight="fill" />
