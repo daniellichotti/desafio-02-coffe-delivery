@@ -3,10 +3,13 @@ import styled from 'styled-components'
 export const MainSuccessContainer = styled.div`
   width: 100vw;
 
-  margin-top: 80px;
+  padding: 160px 184px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  gap: 102px;
 `
 export const MainSuccessText = styled.div`
   h1 {

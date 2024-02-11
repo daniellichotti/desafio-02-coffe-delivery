@@ -5,6 +5,9 @@ import {
   CepInput,
   CheckOutContainer,
   CidadeInput,
+  CoffeeItems,
+  CoffeeItemsButtons,
+  CoffeeItemsContainer,
   ComplementoInput,
   DeliveryAdressForm,
   DeliveryForm,
@@ -18,8 +21,14 @@ import {
   PaymentSelectionText,
   RuaInput,
   StyledMapPin,
+  TotalAndDeliveryPrices,
+  TotalPriceItems,
   UfInput,
 } from './styles'
+import { InputNumberItems } from '../InputNumberItems'
+import { ButtonRemove } from '../ButtonRemove'
+import expressoTradicional from '../../assets/expressoTradicional.svg'
+import { ButtonOrderConfirmation } from '../ButtonOrderConfirmation'
 
 export function MainCheckout() {
   return (
@@ -65,7 +74,49 @@ export function MainCheckout() {
         </OrderForm>
         <OrderConfirmation>
           <h1>Cafés selecionados</h1>
-          <OrderConfirmationCard />
+          <OrderConfirmationCard>
+            <CoffeeItemsContainer>
+              <CoffeeItems>
+                <img src={expressoTradicional} alt="" />
+                <div>
+                  <h2>Expresso Tradicional</h2>
+                  <CoffeeItemsButtons>
+                    <InputNumberItems />
+                    <ButtonRemove />
+                  </CoffeeItemsButtons>
+                </div>
+              </CoffeeItems>
+              <h2>R$ 9,90</h2>
+            </CoffeeItemsContainer>
+            <CoffeeItemsContainer>
+              <CoffeeItems>
+                <img src={expressoTradicional} alt="" />
+                <div>
+                  <h2>Expresso Tradicional</h2>
+                  <CoffeeItemsButtons>
+                    <InputNumberItems />
+                    <ButtonRemove />
+                  </CoffeeItemsButtons>
+                </div>
+              </CoffeeItems>
+              <h2>R$ 9,90</h2>
+            </CoffeeItemsContainer>
+            <TotalPriceItems>
+              <TotalAndDeliveryPrices>
+                <p>Total de itens</p>
+                <p>R$ 29,70</p>
+              </TotalAndDeliveryPrices>
+              <TotalAndDeliveryPrices>
+                <p>Entrega</p>
+                <p>R$ 3,50</p>
+              </TotalAndDeliveryPrices>
+              <TotalAndDeliveryPrices>
+                <h2>Total </h2>
+                <h2>R$ 33,20</h2>
+              </TotalAndDeliveryPrices>
+            </TotalPriceItems>
+            <ButtonOrderConfirmation />
+          </OrderConfirmationCard>
         </OrderConfirmation>
       </CheckOutContainer>
     </>

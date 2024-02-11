@@ -7,7 +7,6 @@ export const CheckOutContainer = styled.div`
   padding: 144px 160px 144px 160px;
 
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 32px;
 `
@@ -149,6 +148,8 @@ export const PaymentMethodButtonsContainer = styled.div`
   width: 560px;
   height: 51px;
 
+  margin-top: 32px;
+
   display: flex;
 
   gap: 12px;
@@ -204,6 +205,75 @@ export const OrderConfirmationCard = styled.div`
   height: 498px;
 
   margin-top: 15px;
+  padding: 16px 40px 16px 40px;
   border-radius: 6px;
   background-color: ${(props) => props.theme['base-card']};
+`
+
+export const CoffeeItemsContainer = styled.div`
+  display: flex;
+  gap: 50px;
+
+  border-bottom: 1px solid ${(props) => props.theme['base-button']};
+
+  img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
+  }
+`
+
+export const CoffeeItems = styled.div`
+  display: flex;
+  margin-bottom: 24px;
+  margin-top: 24px;
+`
+export const CoffeeItemsButtons = styled.div`
+  display: flex;
+  gap: 8px;
+`
+
+export const TotalPriceItems = styled.div`
+  width: 368px;
+  height: 92px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`
+
+export const TotalAndDeliveryPrices = styled.div`
+  width: 368px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
+  }
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+
+    color: ${(props) => props.theme['base-subtitle']};
+  }
 `

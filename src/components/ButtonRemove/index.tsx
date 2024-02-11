@@ -6,7 +6,7 @@ export function ButtonRemove() {
   return (
     <ButtonContainer>
       <StyledTrashPin />
-      REMOVER
+      <p>remover</p>
     </ButtonContainer>
   )
 }
