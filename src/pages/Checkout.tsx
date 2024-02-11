@@ -1,3 +1,11 @@
+import { Header } from '../components/Header'
+import { MainCheckout } from '../components/MainCheckout'
+
 export function Checkout() {
-  return <h1>Checkout</h1>
+  return (
+    <>
+      <Header />
+      <MainCheckout />
+    </>
+  )
 }

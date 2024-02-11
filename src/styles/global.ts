@@ -11,6 +11,21 @@ export const GlobalStyle = createGlobalStyle`
         background: ${(props) => props.theme.background};
         color: ${(props) => props.theme.white};
     }
+    input {
+        margin-bottom: 16px;
+        padding: 12px;
+
+        background-color: ${(props) => props.theme['base-input']};
+        border: none;
+        border-radius: 6px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid ${(props) => props.theme['yellow-dark']};
+        }
+    }
+
+
     body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
