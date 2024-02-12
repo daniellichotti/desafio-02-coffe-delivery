@@ -29,6 +29,7 @@ import { InputNumberItems } from '../InputNumberItems'
 import { ButtonRemove } from '../ButtonRemove'
 import expressoTradicional from '../../assets/expressoTradicional.svg'
 import { ButtonOrderConfirmation } from '../ButtonOrderConfirmation'
+import { NavLink } from 'react-router-dom'
 
 export function MainCheckout() {
   return (
@@ -119,7 +120,9 @@ export function MainCheckout() {
                 <h2>R$ 33,20</h2>
               </TotalAndDeliveryPrices>
             </TotalPriceItems>
-            <ButtonOrderConfirmation />
+            <NavLink to="/success" title="Cart">
+              <ButtonOrderConfirmation />
+            </NavLink>
           </OrderConfirmationCard>
         </OrderConfirmation>
       </CheckOutContainer>

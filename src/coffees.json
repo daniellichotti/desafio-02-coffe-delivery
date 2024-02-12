@@ -1,0 +1,38 @@
+[
+    {
+      "nomeImagem": "expressoTradicional.svg",
+      "tag": ["Tradicional"],
+      "nome": "Expresso Tradicional",
+      "descricao": "O tradicional café feito com água quente e grãos moídos",
+      "preco": 9.90
+    },
+    {
+    "nomeImagem": "expressoAmericano.svg",
+    "tag": ["Tradicional"],
+    "nome": "Expresso Americano",
+    "descricao": "Expresso diluído, menos intenso que o tradicional",
+    "preco": 9.90
+    },
+    {
+    "nomeImagem": "expressoCremoso.svg",
+    "tag": ["Tradicional"],
+    "nome": "Expresso Cremoso",
+    "descricao": "Café expresso tradicional com espuma cremosa",
+    "preco": 9.90
+    },
+    {
+    "nomeImagem": "expressoGelado.svg",
+    "tag": ["Tradicional", "Gelado"],
+    "nome": "Expresso Gelado",
+    "descricao": "Bebida preparada com café expresso e cubos de gelo",
+    "preco": 9.90
+    },
+    {
+    "nomeImagem": "",
+    "tag": [""],
+    "nome": "Emile Ramos",
+    "descricao": "",
+    "preco": 1000000
+    }
+]
+  
