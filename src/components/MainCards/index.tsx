@@ -4,12 +4,11 @@ import {
   Container,
   Price,
   PriceQuantity,
-  Quantity,
   Tags,
 } from './styles'
 import expressoTradicional from '../../assets/expressoTradicional.svg'
-import { Minus, Plus } from '@phosphor-icons/react'
 import { ButtonCart } from '../ButtonCart'
+import { InputNumberItems } from '../InputNumberItems'
 
 export function MainCards() {
   const item = (
@@ -22,11 +21,7 @@ export function MainCards() {
       <p>O tradicional café feito com água quente e grãos moídos</p>
       <PriceQuantity>
         <Price>R$ 9,90</Price>
-        <Quantity>
-          <Minus />
-          <p>1</p>
-          <Plus />
-        </Quantity>
+        <InputNumberItems />
         <ButtonCart buttonColor="#8047F8" iconColor="white" text="" />
       </PriceQuantity>
     </Cards>

@@ -1,14 +1,18 @@
 import {
-  CoffeeIcon,
   MainContainer,
   MainContainerMessage,
+  StyledCoffeeBg,
+  StyledPackageBg,
+  StyledShoppingCartBg,
+  StyledTimerBg,
   TextContainerMessage,
+  TextDetails,
   TextDetailsMessage,
+  TextDetailsMessageContainer,
   TitleSubtitleMessage,
 } from './styled'
 import cupCoffeeMain from '../../assets/cupCoffeeMain.svg'
-import { Coffee, Package, ShoppingCart } from '@phosphor-icons/react'
-import { TimerIcon } from '../TimerIcon'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 
 export function Main() {
   return (
@@ -22,28 +26,36 @@ export function Main() {
               qualquer hora
             </p>
           </TitleSubtitleMessage>
-          <TextDetailsMessage>
-            <div>
-              <div>
-                <ShoppingCart weight="fill" />
+          <TextDetailsMessageContainer>
+            <TextDetails>
+              <TextDetailsMessage>
+                <StyledShoppingCartBg>
+                  <ShoppingCart size={16} color="white" weight="fill" />
+                </StyledShoppingCartBg>
                 <p>Compra simples e segura</p>
-              </div>
-              <div>
-                <Package weight="fill" />
-                <p>Embalagem mantém o café intacto</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <TimerIcon />
+              </TextDetailsMessage>
+              <TextDetailsMessage>
+                <StyledTimerBg>
+                  <Timer size={16} color="white" weight="fill" />
+                </StyledTimerBg>
                 <p>Entrega rápida e rastreada</p>
-                <CoffeeIcon>
-                  <Coffee weight="fill" />
-                </CoffeeIcon>
+              </TextDetailsMessage>
+            </TextDetails>
+            <TextDetails>
+              <TextDetailsMessage>
+                <StyledPackageBg>
+                  <Package size={16} color="white" weight="fill" />
+                </StyledPackageBg>
+                <p>Embalagem mantém o café intacto</p>
+              </TextDetailsMessage>
+              <TextDetailsMessage>
+                <StyledCoffeeBg>
+                  <Coffee size={16} color="white" weight="fill" />
+                </StyledCoffeeBg>
                 <p>O café chega fresquinho até você</p>
-              </div>
-            </div>
-          </TextDetailsMessage>
+              </TextDetailsMessage>
+            </TextDetails>
+          </TextDetailsMessageContainer>
         </TextContainerMessage>
         <div>
           <img src={cupCoffeeMain} alt="" />

@@ -47,62 +47,88 @@ export const TitleSubtitleMessage = styled.div`
   }
 `
 
-export const TextDetailsMessage = styled.div`
+export const TextDetailsMessageContainer = styled.div`
+  width: 567px;
+  height: 84px;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+
   gap: 40px;
-  border: 1px solid red;
 
   margin-top: 90px;
+`
 
-  div {
-    display: flex;
-    gap: 40px;
+export const TextDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  gap: 20px;
+`
+
+export const TextDetailsMessage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: ${(props) => props.theme['base-text']};
   }
 `
 
-export const ShopCartIcon = styled.div`
+export const StyledShoppingCartBg = styled.div`
   width: 32px;
   height: 32px;
-  color: ${(props) => props.theme.white};
-  background: ${(props) => props.theme['yellow-dark']};
-  border-radius: 1000px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 1000px;
+  background-color: ${(props) => props.theme['yellow-dark']};
 `
 
-export const PackageIcon = styled.div`
+export const StyledPackageBg = styled.div`
   width: 32px;
   height: 32px;
-  color: ${(props) => props.theme.white};
-  background: ${(props) => props.theme['base-text']};
-  border-radius: 1000px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 1000px;
+  background-color: ${(props) => props.theme['base-text']};
 `
 
-export const TimerIcon = styled.div`
+export const StyledTimerBg = styled.div`
   width: 32px;
   height: 32px;
-  color: ${(props) => props.theme.white};
-  background: ${(props) => props.theme.yellow};
-  border-radius: 1000px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 1000px;
+  background-color: ${(props) => props.theme.yellow};
 `
 
-export const CoffeeIcon = styled.div`
+export const StyledCoffeeBg = styled.div`
   width: 32px;
   height: 32px;
-  color: ${(props) => props.theme.white};
-  background: ${(props) => props.theme.purple};
-  border-radius: 1000px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 1000px;
+  background-color: ${(props) => props.theme.purple};
 `
