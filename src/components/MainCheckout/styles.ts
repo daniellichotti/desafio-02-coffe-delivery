@@ -1,5 +1,6 @@
 import { MapPin } from '@phosphor-icons/react'
 import styled from 'styled-components'
+import * as RadioGroup from '@radix-ui/react-radio-group'
 
 export const CheckOutContainer = styled.div`
   width: 100vw;
@@ -144,7 +145,7 @@ export const PaymentSelectionText = styled.div`
   gap: 8px;
 `
 
-export const PaymentMethodButtonsContainer = styled.div`
+export const PaymentMethodInputContainer = styled(RadioGroup.Root)`
   width: 560px;
   height: 51px;
 
@@ -155,7 +156,7 @@ export const PaymentMethodButtonsContainer = styled.div`
   gap: 12px;
 `
 
-export const PaymentMethodButton = styled.button`
+export const PaymentMethodInput = styled(RadioGroup.Item)`
   width: 178.67px;
   height: 51px;
   border: none;
@@ -175,14 +176,9 @@ export const PaymentMethodButton = styled.button`
   text-transform: uppercase;
   color: ${(props) => props.theme['base-text']};
 
-  &:hover {
-    color: ${(props) => props.theme['base-subtitle']};
-    background-color: ${(props) => props.theme['base-hover']};
-  }
-
-  &:active {
-    background-color: ${(props) => props.theme['purple-light']};
+  &[data-state='checked'] {
     border: 1px solid ${(props) => props.theme.purple};
+    background-color: ${(props) => props.theme['purple-light']};
   }
 `
 

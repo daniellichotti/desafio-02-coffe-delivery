@@ -15,8 +15,8 @@ import {
   OrderConfirmation,
   OrderConfirmationCard,
   OrderForm,
-  PaymentMethodButton,
-  PaymentMethodButtonsContainer,
+  PaymentMethodInput,
+  PaymentMethodInputContainer,
   PaymentSelection,
   PaymentSelectionText,
   RuaInput,
@@ -65,11 +65,15 @@ export function MainCheckout() {
                 </p>
               </div>
             </PaymentSelectionText>
-            <PaymentMethodButtonsContainer>
-              <PaymentMethodButton>Cartão de crédito</PaymentMethodButton>
-              <PaymentMethodButton>cartão de débito</PaymentMethodButton>
-              <PaymentMethodButton>dinheiro</PaymentMethodButton>
-            </PaymentMethodButtonsContainer>
+            <PaymentMethodInputContainer>
+              <PaymentMethodInput value="creditCard">
+                Cartão de crédito
+              </PaymentMethodInput>
+              <PaymentMethodInput value="debitCard">
+                cartão de débito
+              </PaymentMethodInput>
+              <PaymentMethodInput value="cash">dinheiro</PaymentMethodInput>
+            </PaymentMethodInputContainer>
           </PaymentSelection>
         </OrderForm>
         <OrderConfirmation>

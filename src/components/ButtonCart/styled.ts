@@ -13,6 +13,11 @@ export const ButtonCartContainer = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid ${(props) => props.theme['yellow-dark']};
+  }
 `
 
 export const StyledShoppingCart = styled(ShoppingCart)`

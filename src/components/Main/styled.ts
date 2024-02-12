@@ -9,6 +9,7 @@ export const MainContainerMessage = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 56px;
 `
 
 export const TextContainerMessage = styled.div`
@@ -52,14 +53,13 @@ export const TextDetailsMessage = styled.div`
   align-items: center;
   justify-content: center;
   gap: 40px;
+  border: 1px solid red;
 
   margin-top: 90px;
 
   div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    gap: 40px;
   }
 `
 

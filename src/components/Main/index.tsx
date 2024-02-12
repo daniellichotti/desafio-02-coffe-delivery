@@ -2,8 +2,6 @@ import {
   CoffeeIcon,
   MainContainer,
   MainContainerMessage,
-  PackageIcon,
-  ShopCartIcon,
   TextContainerMessage,
   TextDetailsMessage,
   TitleSubtitleMessage,
@@ -27,15 +25,11 @@ export function Main() {
           <TextDetailsMessage>
             <div>
               <div>
-                <ShopCartIcon>
-                  <ShoppingCart weight="fill" />
-                </ShopCartIcon>
+                <ShoppingCart weight="fill" />
                 <p>Compra simples e segura</p>
               </div>
               <div>
-                <PackageIcon>
-                  <Package weight="fill" />
-                </PackageIcon>
+                <Package weight="fill" />
                 <p>Embalagem mantém o café intacto</p>
               </div>
             </div>

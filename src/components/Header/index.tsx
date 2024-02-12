@@ -9,7 +9,7 @@ export function Header() {
       <img src={logo} alt="Coffee Delivery logo" />
       <ButtonsContainer>
         <LocationButton />
-        <ButtonCart />
+        <ButtonCart buttonColor="" iconColor="" text="" />
       </ButtonsContainer>
     </HeaderContainer>
   )
